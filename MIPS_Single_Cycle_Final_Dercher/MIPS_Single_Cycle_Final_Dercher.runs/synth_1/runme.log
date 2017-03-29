@@ -1,0 +1,631 @@
+
+*** Running vivado
+    with args -log mips_single_cycle.vds -m64 -mode batch -messageDb vivado.pb -notrace -source mips_single_cycle.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source mips_single_cycle.tcl -notrace
+Command: synth_design -top mips_single_cycle -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9156 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:49 . Memory (MB): peak = 298.996 ; gain = 90.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mips_single_cycle' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:15]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/alu.vhd:6' bound to instance 'alu_i1' of component 'ALU' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/alu.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (1#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/alu.vhd:18]
+INFO: [Synth 8-3491] module 'ALU_controller' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/alu_controller.vhd:6' bound to instance 'alu_controller_i1' of component 'ALU_controller' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'ALU_controller' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/alu_controller.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ALU_controller' (2#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/alu_controller.vhd:15]
+INFO: [Synth 8-3491] module 'DM' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/dm_4byte_wide.vhd:6' bound to instance 'dm_i1' of component 'DM' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'DM' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/dm_4byte_wide.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'DM' (3#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/dm_4byte_wide.vhd:19]
+INFO: [Synth 8-3491] module 'First_Shift_Left_2' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/first_shift_left_2.vhd:6' bound to instance 'first_shift_left_2_i1' of component 'First_Shift_Left_2' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'First_Shift_Left_2' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/first_shift_left_2.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'First_Shift_Left_2' (4#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/first_shift_left_2.vhd:14]
+INFO: [Synth 8-3491] module 'IM' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:6' bound to instance 'im_i1' of component 'IM' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:240]
+INFO: [Synth 8-638] synthesizing module 'IM' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:15]
+WARNING: [Synth 8-614] signal 'im_mem' is read in the process but is not in the sensitivity list [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'IM' (5#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:15]
+INFO: [Synth 8-3491] module 'Main_Control_Unit' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mips_cu_behav.vhd:6' bound to instance 'main_control_unit_i1' of component 'Main_Control_Unit' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'Main_Control_Unit' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mips_cu_behav.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'Main_Control_Unit' (6#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mips_cu_behav.vhd:26]
+INFO: [Synth 8-3491] module 'PC_register' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/pc_register.vhd:6' bound to instance 'pc_register_i1' of component 'PC_register' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:264]
+INFO: [Synth 8-638] synthesizing module 'PC_register' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/pc_register.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'PC_register' (7#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/pc_register.vhd:16]
+INFO: [Synth 8-3491] module 'RegFile' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/regfile.vhd:5' bound to instance 'regfile_i1' of component 'RegFile' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/regfile.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (8#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/regfile.vhd:19]
+INFO: [Synth 8-3491] module 'mux_first' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mux_first.vhd:6' bound to instance 'JAL_MUX_WA' of component 'mux_first' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:285]
+INFO: [Synth 8-638] synthesizing module 'mux_first' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mux_first.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'mux_first' (9#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mux_first.vhd:16]
+INFO: [Synth 8-3491] module 'mux_second' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mux_second.vhd:6' bound to instance 'JAL_MUX_WD' of component 'mux_second' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:293]
+INFO: [Synth 8-638] synthesizing module 'mux_second' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mux_second.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'mux_second' (10#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mux_second.vhd:16]
+INFO: [Synth 8-3491] module 'Second_Shift_Left_2' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/second_shift_left_2.vhd:6' bound to instance 'second_shift_left_2_i1' of component 'Second_Shift_Left_2' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:302]
+INFO: [Synth 8-638] synthesizing module 'Second_Shift_Left_2' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/second_shift_left_2.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Second_Shift_Left_2' (11#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/second_shift_left_2.vhd:14]
+INFO: [Synth 8-3491] module 'adder_first' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/adder_first.vhd:6' bound to instance 'adder_first_i1' of component 'adder_first' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:308]
+INFO: [Synth 8-638] synthesizing module 'adder_first' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/adder_first.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'adder_first' (12#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/adder_first.vhd:14]
+INFO: [Synth 8-3491] module 'adder_second' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/adder_second.vhd:6' bound to instance 'adder_second_i1' of component 'adder_second' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:314]
+INFO: [Synth 8-638] synthesizing module 'adder_second' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/adder_second.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'adder_second' (13#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/adder_second.vhd:15]
+INFO: [Synth 8-3491] module 'mux_first' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mux_first.vhd:6' bound to instance 'mux_first_i1' of component 'mux_first' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:321]
+INFO: [Synth 8-3491] module 'mux_second' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mux_second.vhd:6' bound to instance 'mux_jr' of component 'mux_second' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:329]
+INFO: [Synth 8-3491] module 'mux_second' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mux_second.vhd:6' bound to instance 'mux_second_i1' of component 'mux_second' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:337]
+INFO: [Synth 8-3491] module 'mux_second' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mux_second.vhd:6' bound to instance 'mux_second_i3' of component 'mux_second' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:345]
+INFO: [Synth 8-3491] module 'mux_second' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mux_second.vhd:6' bound to instance 'mux_second_i4' of component 'mux_second' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:353]
+INFO: [Synth 8-3491] module 'mux_second' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/complete/mux_second.vhd:6' bound to instance 'mux_second_i2' of component 'mux_second' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:361]
+INFO: [Synth 8-3491] module 'sign_extend' declared at 'C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/sign_extend.vhd:6' bound to instance 'sign_extend_i1' of component 'sign_extend' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:369]
+INFO: [Synth 8-638] synthesizing module 'sign_extend' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/sign_extend.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'sign_extend' (14#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/sign_extend.vhd:14]
+WARNING: [Synth 8-3848] Net Bne in module/entity mips_single_cycle does not have driver. [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'mips_single_cycle' (15#1) [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd:15]
+WARNING: [Synth 8-3331] design Second_Shift_Left_2 has unconnected port Instruction_15_0_Sign_Extended[31]
+WARNING: [Synth 8-3331] design Second_Shift_Left_2 has unconnected port Instruction_15_0_Sign_Extended[30]
+WARNING: [Synth 8-3331] design IM has unconnected port ReadAddress[31]
+WARNING: [Synth 8-3331] design DM has unconnected port Address[31]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:50 . Memory (MB): peak = 338.961 ; gain = 130.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:50 . Memory (MB): peak = 338.961 ; gain = 130.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:50 . Memory (MB): peak = 338.961 ; gain = 130.207
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Synth 8-5587] ROM size for "ALU_control" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "dm_mem_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[50]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[51]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[52]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[53]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[54]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[55]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[56]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[57]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[58]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[59]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[60]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[61]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[62]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[63]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[64]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[65]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[66]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[67]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[68]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[69]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[70]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[71]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[72]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[73]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[74]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[75]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[76]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[77]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[78]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[79]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[80]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[81]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[82]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[83]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[84]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[85]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[86]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[87]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[88]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[89]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[90]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[91]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[92]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[93]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[94]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[95]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[96]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[97]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[98]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dm_mem_reg[99]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5587] ROM size for "ALUSrc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "Beq" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Bne" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Jr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemToReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_mem_reg[31]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[0]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[1]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[2]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[3]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[4]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[5]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[6]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[7]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[8]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[9]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[10]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[12]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[13]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[14]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[15]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[16]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[17]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[18]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[19]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[20]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[21]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[25]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[27]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[29]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[32]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'im_mem_reg[34]' [C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:78]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:52 . Memory (MB): peak = 473.602 ; gain = 264.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 161   
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 161   
+	   9 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module ALU_controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      4 Bit        Muxes := 1     
+Module DM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 128   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 128   
+Module IM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Main_Control_Unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module PC_register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module mux_first 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module mux_second 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module adder_first 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module adder_second 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:01:00 . Memory (MB): peak = 605.430 ; gain = 396.676
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design DM has unconnected port Address[31]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:01:02 . Memory (MB): peak = 605.430 ; gain = 396.676
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:01:02 . Memory (MB): peak = 605.430 ; gain = 396.676
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][31]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][30]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][29]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][28]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][27]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][26]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][25]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][24]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][23]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][22]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][21]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][20]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][19]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][18]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][17]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][16]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][15]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][14]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][13]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][12]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][11]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][10]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][9]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][8]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][7]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][6]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][5]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][4]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][3]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][2]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][1]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[0][0]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][31]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][30]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][29]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][28]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][27]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][26]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][25]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][24]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][23]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][22]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][21]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][20]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][19]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][18]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][17]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][16]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][15]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][14]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][13]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][12]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][11]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][10]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][9]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][8]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][7]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][6]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][5]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][4]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][3]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][2]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][1]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[1][0]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][31]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][30]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][29]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][28]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][27]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][26]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][25]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][24]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][23]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][22]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][21]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][20]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][19]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][18]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][17]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][16]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][15]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][14]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][13]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][12]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][11]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][10]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][9]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][8]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][7]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][6]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][5]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][4]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][3]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][2]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][1]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[2][0]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[3][31]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[3][30]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[3][29]) is unused and will be removed from module DM.
+WARNING: [Synth 8-3332] Sequential element (dm_mem_reg[3][28]) is unused and will be removed from module DM.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:01:02 . Memory (MB): peak = 605.430 ; gain = 396.676
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:01:02 . Memory (MB): peak = 605.430 ; gain = 396.676
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:01:02 . Memory (MB): peak = 605.430 ; gain = 396.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:01:02 . Memory (MB): peak = 605.430 ; gain = 396.676
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:01:02 . Memory (MB): peak = 605.430 ; gain = 396.676
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:01:02 . Memory (MB): peak = 605.430 ; gain = 396.676
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:01:03 . Memory (MB): peak = 605.430 ; gain = 396.676
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:01:03 . Memory (MB): peak = 605.430 ; gain = 396.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:01:03 . Memory (MB): peak = 605.430 ; gain = 396.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:01:03 . Memory (MB): peak = 605.430 ; gain = 396.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:01:03 . Memory (MB): peak = 605.430 ; gain = 396.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:01:03 . Memory (MB): peak = 605.430 ; gain = 396.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:01:03 . Memory (MB): peak = 605.430 ; gain = 396.676
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6017 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 605.430 ; gain = 375.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:01:03 . Memory (MB): peak = 605.430 ; gain = 396.676
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+200 Infos, 133 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:01:18 . Memory (MB): peak = 678.129 ; gain = 463.215
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 678.129 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 21 18:46:14 2016...

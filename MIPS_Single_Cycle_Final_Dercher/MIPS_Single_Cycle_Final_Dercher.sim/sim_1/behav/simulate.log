@@ -1,0 +1,7 @@
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+ERROR: Index -1048579 out of bound 0 to 37
+Time: 315 ns  Iteration: 2  Process: /mips_single_cycle_tb/uut/im_i1/process1
+  File: C:/Users/Luke/OneDrive/Documents/EECS_645/Final_MIPS_Single_Cycle_Dercher/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd
+
+HDL Line: C:/Users/Luke/OneDrive/Documents/EECS_645/Final_MIPS_Single_Cycle_Dercher/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd:86

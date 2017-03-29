@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Nov 21 18:44:53 2016
+# Process ID: 7664
+# Current directory: C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/MIPS_Single_Cycle_Final_Dercher/MIPS_Single_Cycle_Final_Dercher.runs/synth_1
+# Command line: vivado.exe -log mips_single_cycle.vds -mode batch -messageDb vivado.pb -notrace -source mips_single_cycle.tcl
+# Log file: C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/MIPS_Single_Cycle_Final_Dercher/MIPS_Single_Cycle_Final_Dercher.runs/synth_1/mips_single_cycle.vds
+# Journal file: C:/Users/ldercher/Desktop/HW10_MIPS_Single_Cycle_Solution/MIPS_Single_Cycle_Final_Dercher/MIPS_Single_Cycle_Final_Dercher.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mips_single_cycle.tcl -notrace

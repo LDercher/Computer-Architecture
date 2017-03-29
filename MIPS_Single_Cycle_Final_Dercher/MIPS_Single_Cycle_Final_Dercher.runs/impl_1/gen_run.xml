@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1479775707">
+  <File Type="OPT-TIMING" Name="mips_single_cycle_timing_summary_opted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="mips_single_cycle_physopt.dcp"/>
+  <File Type="PA-DCP" Name="mips_single_cycle.dcp"/>
+  <File Type="OPT-DCP" Name="mips_single_cycle_opt.dcp"/>
+  <File Type="ROUTE-STATUS-PB" Name="mips_single_cycle_route_status.pb"/>
+  <File Type="PA-TCL" Name="mips_single_cycle.tcl"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="mips_single_cycle_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="mips_single_cycle_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="mips_single_cycle_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="mips_single_cycle_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="mips_single_cycle.hwdef"/>
+  <File Type="RDI-RDI" Name="mips_single_cycle.vdi"/>
+  <File Type="PWROPT-DRC" Name="mips_single_cycle_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="mips_single_cycle_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="mips_single_cycle_placed.dcp"/>
+  <File Type="PLACE-IO" Name="mips_single_cycle_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="mips_single_cycle_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="mips_single_cycle_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="mips_single_cycle_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="mips_single_cycle_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="mips_single_cycle_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mips_single_cycle_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="mips_single_cycle_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mips_single_cycle_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="mips_single_cycle_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="mips_single_cycle_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="mips_single_cycle_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="mips_single_cycle_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="mips_single_cycle_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="mips_single_cycle_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="mips_single_cycle_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="mips_single_cycle_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIT" Name="mips_single_cycle.bit"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mips_single_cycle_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="mips_single_cycle_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="mips_single_cycle_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="mips_single_cycle_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="mips_single_cycle_route_status.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="mips_single_cycle_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="mips_single_cycle_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="mips_single_cycle_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="mips_single_cycle_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="mips_single_cycle_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="mips_single_cycle_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mips_single_cycle_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="mips_single_cycle_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="mips_single_cycle_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="mips_single_cycle_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIN" Name="mips_single_cycle.bin"/>
+  <File Type="BITSTR-MSK" Name="mips_single_cycle.msk"/>
+  <File Type="BITSTR-RBT" Name="mips_single_cycle.rbt"/>
+  <File Type="BITSTR-NKY" Name="mips_single_cycle.nky"/>
+  <File Type="BITSTR-BMM" Name="mips_single_cycle_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="mips_single_cycle.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="mips_single_cycle.sysdef"/>
+  <File Type="BG-BGN" Name="mips_single_cycle.bgn"/>
+  <File Type="BG-DRC" Name="mips_single_cycle.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/incomplete/sign_extend.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/incomplete/regfile.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/incomplete/pc_register.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/incomplete/dm_4byte_wide.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/incomplete/alu_controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/complete/second_shift_left_2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/complete/mux_second.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/complete/mux_first.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/complete/mips_cu_behav.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/complete/first_shift_left_2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/complete/alu.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/complete/adder_second.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/complete/adder_first.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../06_MIPS_Single_Cycle/design_sources/incomplete/mips_single_cycle_struct.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mips_single_cycle"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

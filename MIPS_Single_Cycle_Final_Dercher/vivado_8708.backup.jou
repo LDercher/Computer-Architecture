@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Nov 21 19:04:58 2016
+# Process ID: 8708
+# Current directory: C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/MIPS_Single_Cycle_Final_Dercher
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1136 C:\Users\ldercher\Desktop\Final_MIPS_Single_Cycle_Dercher\MIPS_Single_Cycle_Final_Dercher\MIPS_Single_Cycle_Final_Dercher.xpr
+# Log file: C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/MIPS_Single_Cycle_Final_Dercher/vivado.log
+# Journal file: C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/MIPS_Single_Cycle_Final_Dercher\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/MIPS_Single_Cycle_Final_Dercher/MIPS_Single_Cycle_Final_Dercher.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/06_MIPS_Single_Cycle/simulation_sources/mips_single_cycle_wave.wcfg
+source mips_single_cycle_tb.tcl
+add_bp {C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/06_MIPS_Single_Cycle/design_sources/incomplete/dm_4byte_wide.vhd} 48
+remove_bps -all
+close_sim
+launch_simulation
+open_wave_config C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/06_MIPS_Single_Cycle/simulation_sources/mips_single_cycle_wave.wcfg
+source mips_single_cycle_tb.tcl
+save_wave_config {C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/06_MIPS_Single_Cycle/simulation_sources/mips_single_cycle_wave.wcfg}
+add_bp {C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/06_MIPS_Single_Cycle/design_sources/incomplete/im_4byte_wide.vhd} 81
+remove_bps -all
+close_sim
+launch_simulation
+open_wave_config C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/06_MIPS_Single_Cycle/simulation_sources/mips_single_cycle_wave.wcfg
+source mips_single_cycle_tb.tcl
+save_wave_config {C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/06_MIPS_Single_Cycle/simulation_sources/mips_single_cycle_wave.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/06_MIPS_Single_Cycle/simulation_sources/mips_single_cycle_wave.wcfg
+source mips_single_cycle_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/06_MIPS_Single_Cycle/simulation_sources/mips_single_cycle_wave.wcfg
+source mips_single_cycle_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/ldercher/Desktop/Final_MIPS_Single_Cycle_Dercher/06_MIPS_Single_Cycle/simulation_sources/mips_single_cycle_wave.wcfg
+source mips_single_cycle_tb.tcl
+close_sim
